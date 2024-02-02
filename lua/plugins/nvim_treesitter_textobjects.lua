@@ -44,8 +44,14 @@ return {
                         ["if"] = { query = "@call.inner", desc = "Select inner part of a function call" },
 
                         -- select outer/inner of a method
-                        ["am"] = { query = "@function.outer", desc = "Select outer part of a method/function definition" },
-                        ["im"] = { query = "@function.inner", desc = "Select inner part of a method/function definition" },
+                        ["am"] = {
+                            query = "@function.outer",
+                            desc = "Select outer part of a method/function definition",
+                        },
+                        ["im"] = {
+                            query = "@function.inner",
+                            desc = "Select inner part of a method/function definition",
+                        },
 
                         -- select outer/inner of a class
                         ["ac"] = { query = "@class.outer", desc = "Select outer part of a class" },
