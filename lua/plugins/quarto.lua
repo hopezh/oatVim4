@@ -11,7 +11,7 @@ return {
 
     -- this taps into vim.ui.select and vim.ui.input
     -- and in doing so currently breaks renaming in otter.nvim
-    -- { "stevearc/dressing.nvim", enabled = false },
+    { "stevearc/dressing.nvim", enabled = false },
 
     {
         "quarto-dev/quarto-nvim",
@@ -149,12 +149,7 @@ return {
         opts = function(_, opts)
             ---@param opts cmp.ConfigSchema
             local cmp = require("cmp")
-            opts.sources = cmp.config.sources(
-                vim.list_extend(
-                    opts.sources,
-                    { { name = "otter" } }
-                )
-            )
+            opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "otter" } }))
         end,
     },
 
