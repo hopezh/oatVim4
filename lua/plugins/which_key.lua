@@ -59,6 +59,10 @@ return {
                 },
             },
 
+            ["<leader>m"] = {
+                name = "markdown",
+            },
+
             -- keymap group for otter
             ["<leader>o"] = {
                 name = "otter",
