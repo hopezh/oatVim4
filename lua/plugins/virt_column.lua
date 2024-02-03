@@ -4,7 +4,7 @@ return {
     ----------------------------------------------------------------------------
     config = function()
         require("virt-column").setup({
-            char = ".",
+            -- char = ".",
             -- char = "║",
             -- char = "|",
             -- char = "│",
