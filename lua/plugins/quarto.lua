@@ -199,7 +199,6 @@ return {
     {
         "neovim/nvim-lspconfig",
 
-        -- stylua: ignore
         ---@class PluginLspOpts
         opts = {
             ---@type lspconfig.options
@@ -214,11 +213,7 @@ return {
                     -- to $home/.config/marksman/config.toml in Mac OS
                     -- to $home\AppData\Roaming\marksman\config.toml in Windows
                     filetypes = { "markdown", "quarto" },
-                    root_dir = require("lspconfig.util").root_pattern(
-                        ".git",
-                        ".marksman.toml",
-                        "_quarto.yml"
-                    ),
+                    root_dir = require("lspconfig.util").root_pattern(".git", ".marksman.toml", "_quarto.yml"),
                 },
             },
         },
@@ -252,7 +247,7 @@ return {
                 "org",
                 "python",
                 "query",
-                -- "r",
+                "r",
                 "regex",
                 "tsx",
                 "typescript",
